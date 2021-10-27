@@ -1,0 +1,17 @@
+.btn-add-todo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    border: 1px solid #dadada;
+    color: #777;
+    margin-top: 50px;
+    transition: .3s;
+    border-radius: 4px;
+}
+.btn-add-todo:hover{
+    background-color: #dadada;
+    color: #222;
+}

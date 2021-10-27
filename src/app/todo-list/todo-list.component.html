@@ -1,0 +1,4 @@
+<p *ngIf="loading" style="text-align: center;">Loading...</p>
+<app-todo-item *ngFor="let todo of todos" [todo]="todo" (toggled)="toggleTodoStatus($event)" (deleted)="deleteTodo($event)">
+</app-todo-item>
+<a routerLink="add" class="btn-add-todo">Ajouté une tâche</a>

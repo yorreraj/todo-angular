@@ -1,0 +1,7 @@
+<div [ngClass]="todo.finish?'finished':''" class="todo-item">
+    <div class="todo-item-left-content">
+        <button class="btn-delete-todo" (click)="delete(todo.id)">x</button>
+        <p class="todo-item-text" (click)="toggle(todo.id)">{{todo.text}}</p>
+    </div>
+    <input type="checkbox" class="todo-item-checkbox" [(ngModel)]="todo.finish">
+</div>
